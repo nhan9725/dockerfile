@@ -1,0 +1,14 @@
+FROM nginx:stable-alpine
+
+ADD nginx.conf /etc/nginx/nginx.conf
+
+#COPY ./nginx-alawani.conf.template /etc/nginx/conf.d/alawani.conf
+
+#COPY ./docker-entrypoint.sh /
+
+#RUN ln -sf /dev/stdout /var/log/nginx/access.log \
+#  && ln -sf /dev/stderr /var/log/nginx/error.log
+
+#ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
+
+
